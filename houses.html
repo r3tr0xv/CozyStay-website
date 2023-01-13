@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cozy Stay</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="assets/css/jquery.timepicker.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+	<script src="assets/js/script.js"></script>
+	<link rel="shortcut icon" type="image/jpg" href="assets/images/island.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+			div.searchbar input[type=text] {
+				padding: 3px;
+				font-size: 15px;
+				border: 0px solid ;
+				float: left;
+				width: 80%;
+				border-radius: 10px 0px 0px 10px;
+				background: #f1f1f1;
+				}
+
+			div.searchbar button {
+				float: left;
+				width: 20%;
+				padding: 3px;
+				background: #2196F3;
+				color: white;
+				font-size: 15px;
+				border: 0px solid ;
+				border-radius: 0px 10px 10px 0px;
+				border-left: none; 
+				cursor: pointer;
+				}
+
+			div.searchbar button:hover {
+				background: #2f89fc;
+				}
+
+			div.searchbar::after {
+				content: "";
+				clear: both;
+				display: table;
+				}
+	</style>
+  </head>
+  <body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">Cozy<span>Stay</span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto" id="header">
+					<script>
+						dynamicHeader();
+					</script>
+				</ul>
+				<div class="searchbar" id="search_input_box">
+					<input type="text" style="text-align: center;" placeholder="Search By Region" name="search" id="search_input"
+						onkeypress="searchPr(event)">
+					<button type="submit" id="search_button" onclick="searchPr(event)">
+						<i class="fa fa-search"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+		<div class="hero-wrap" style="background-image: url('assets/images/four-s.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text d-flex align-itemd-center justify-content-center">
+          <div class="col-md-9 ftco-animate text-center d-flex align-items-end justify-content-center">
+          	<div class="text">
+	            <h1 class="mb-4 bread">Our Cozy Houses</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="ftco-section ftco-menu bg-light">
+		<div class="container col-md-8">
+			<div class="row justify-content-center mb-5 pb-3">
+          		<div class="col-md-7 heading-section text-center ftco-animate">
+          			<h2 style="font-size:larger;" class="subheading">Our finest selection of houses for you</h2>
+          		</div>
+        	</div>
+			<div class="row" id="houses" style="margin-left: 20px;">
+        		<script>
+					showcaseHouses();
+				</script>
+        	</div>
+		</div>
+	</section>
+	<footer class="ftco-footer ftco-section img" style="background-image: url(assets/images/bg_4.jpg);">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Cozy Stay</h2>
+						<p>We offer you the unforgettable cozy stay you'll never even have in your own dreams</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-5">
+						<h2 class="ftco-heading-2">Useful Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">Houses</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">FAQ</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">Career</a></li>
+							<li><a href="#" class="py-2 d-block">About Us</a></li>
+							<li><a href="#" class="py-2 d-block">Contact Us</a></li>
+							<li><a href="#" class="py-2 d-block">Services</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Want to reach us ?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+(216) 23 129
+											129</span></a>
+								</li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">contact@crococoder.tn</span></a></li>
+								<li><a
+										href="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d25549.100916417417!2d10.173178551763044!3d36.82720281633506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e6!4m3!3m2!1d36.806493599999996!2d10.181532299999999!4m3!3m2!1d36.8469137!2d10.195920899999999!5e0!3m2!1sen!2stn!4v1663212915360!5m2!1sen!2stn"><span
+											class="icon icon-map-marker"></span><span class="text">Immeuble Yasmine
+											Tower, 1er étage, A
+											1-5, Centre Urbain Nord 1003 Tunis, Tunisia</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>CrocoCoder Academy &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.easing.1.3.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.stellar.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/aos.js"></script>
+  <script src="assets/js/jquery.animateNumber.min.js"></script>
+  <script src="assets/js/bootstrap-datepicker.js"></script>
+  <script src="assets/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="assets/js/google-map.js"></script>
+  <script src="assets/js/main.js"></script>
+    
+  </body>
+</html>
